@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosa Forte</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" type="image/x-icon" href="/public/cosaforte.ico">
+  <script>
+    function changeLanguage(lang) {
+      const sections = document.querySelectorAll('[data-lang]');
+      sections.forEach(section => {
+        section.style.display = section.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      changeLanguage('sr'); // default language
+    });
+
+        window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.querySelector('.preloader').style.display = 'none';
+      }, 4500);
+    });
+
+  </script>
+</head>
+<body>
+   <div class="preloader">
+    <span id="letter-s" class="fade-letter">Cosa</span>
+    <span style="width: 20px;"></span>
+    <span id="letter-p" class="fade-letter">Forte</span>
+  </div>
+  <div class="container">
+    <header>
+      COSA FORTE
+    </header>
+
+    <nav>
+      <ul>
+        
+        <li><a href="onama">O nama</a></li>
+        <li><a href="usluge">Usluge</a></li>
+        <li><a href="kontakt">Kontakt</a></li>
+        <li>
+          <select onchange="changeLanguage(this.value)">
+            <option value="sr" selected>🇷🇸 Srpski</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="de">🇩🇪 Deutsch</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="divider"></div>
+
+    <main>
+      <section id="pocetna" data-lang="sr">
+        <h1>Ovde se ne priča prazno – ovde se gradi <span class="gold">brend</span>!</h1>
+      </section>
+      <section id="pocetna" data-lang="en" style="display:none">
+        <h1>No empty talk here – we <span class="gold">build brands</span>!</h1>
+      </section>
+      <section id="pocetna" data-lang="de" style="display:none">
+        <h1>Keine leeren Worte – hier wird eine <span class="gold">Marke</span> aufgebaut!</h1>
+      </section>
+
+      <section id="onama" data-lang="sr">
+        <h2>O nama  – Cosa Forte</h2>
+        <p>Cosa Forte je nezavisni kreativni studio koji spaja reč i dizajn u oružje uticaja.<br>
+        Jedan čovek. Više veština. Jedan cilj: da tvoj brend izgleda i zvuči kao da zna šta radi.</p>
+        <h3>🎯 Specijalizovani smo za:</h3>
+        <p>Copywriting – slogani, tekstovi za sajtove, reklame, društvene mreže<br>
+        Grafički dizajn – logotipi, objave, brendiranje, prezentacije<br>
+        Brendiranje – ton komunikacije, vizuelni identitet, ime, profil<br>
+        Social Media – content, dizajn i tekst u paketu</p>
+        <p>⸻</p>
+        <h3>Ovde na serveru možeš da:</h3>
+        <p>Naručiš rad – jasno, brzo, bez prazne priče<br>
+        Uđeš u zajednicu ljudi koji cene kvalitet<br>
+        Pratiš rad u toku i ostaviš feedback<br>
+        Naučiš nešto – ako znaš da slušaš</p>
+      </section>
+
+      <section id="onama" data-lang="en" style="display:none">
+        <h2>ABOUT US – Cosa Forte</h2>
+        <p>Cosa Forte is an independent creative studio that turns words and design into a weapon of influence.<br>
+        One man. Multiple skills. One goal: to make your brand look and sound like it knows what it's doing.</p>
+        <h3>🎯 We specialize in:</h3>
+        <p>Copywriting – slogans, website texts, ads, social media<br>
+        Graphic design – logos, posts, branding, presentations<br>
+        Branding – tone of voice, visual identity, name, profile<br>
+        Social Media – content, design and text packages</p>
+      </section>
+
+      <section id="onama" data-lang="de" style="display:none">
+        <h2>ÜBER UNS – Cosa Forte</h2>
+        <p>Cosa Forte ist ein unabhängiges Kreativstudio, das Wort und Design in eine Waffe der Einflussnahme verwandelt.<br>
+        Ein Mann. Viele Fähigkeiten. Ein Ziel: Deine Marke soll aussehen und klingen, als wüsste sie, was sie tut.</p>
+        <h3>🎯 Wir sind spezialisiert auf:</h3>
+        <p>Copywriting – Slogans, Website-Texte, Werbung, soziale Medien<br>
+        Grafikdesign – Logos, Beiträge, Branding, Präsentationen<br>
+        Branding – Tonalität, visuelle Identität, Name, Profil<br>
+        Social Media – Inhalte, Design und Text im Paket</p>
+      </section>
+
+      <section id="usluge" data-lang="sr">
+        <h2>Usluge</h2>
+        <p>💬 | Zagarantovan provod<br>
+        ✍️ | Copywriting – rečenice koje imaju svoju vrednost.<br>
+        🎨 | Dizajn – od logoa do reklama/vizit karti.<br>
+        📲 | Social Media – objave, storyji, kampanje.<br>
+        👁️‍🔮 | Brendiranje – tvoj identitet od osnove do prepoznatljivosti, sa jasnim stilom i tonom komunikacije.</p>
+      </section>
+
+      <section id="usluge" data-lang="en" style="display:none">
+        <h2>Services</h2>
+        <p>💬 | Guaranteed fun<br>
+        ✍️ | Copywriting – sentences that hold real value.<br>
+        🎨 | Design – from logos to ads/business cards.<br>
+        📲 | Social Media – posts, stories, campaigns.<br>
+        👁️‍🔮 | Branding – your identity from the ground up to recognition, with a clear style and tone of voice.</p>
+      </section>
+
+      <section id="usluge" data-lang="de" style="display:none">
+        <h2>Dienstleistungen</h2>
+        <p>💬 | Garantierter Spaß<br>
+        ✍️ | Copywriting – Sätze mit echtem Wert.<br>
+        🎨 | Design – von Logos bis zu Anzeigen/Visitenkarten.<br>
+        📲 | Social Media – Beiträge, Stories, Kampagnen.<br>
+        👁️‍🔮 | Branding – deine Identität von Grund auf bis zur Wiedererkennung, mit klarem Stil und Kommunikationsstil.</p>
+      </section>
+    </main>
+</div>
+    <footer>
+      <p>© 2025 Cosa Forte – Sva prava pridržana.</p>
+      <p>Powered by <a href="https://snagapiksela.net">SnagaPiksela</a></p>
+    </footer>
+  </div>
+</body>
+</html>

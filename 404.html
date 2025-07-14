@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Stranica nije pronađena</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      animation: floatIn 2s ease forwards;
+    }
+    h1 {
+      font-size: 8rem;
+      margin: 0;
+      animation: bounce 2s infinite;
+      color: #f44336;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+    a.button {
+      display: inline-block;
+      background: #fff;
+      color: #f44336;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    a.button:hover {
+      background: #f44336;
+      color: #fff;
+    }
+    @keyframes floatIn {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    .emoji {
+      font-size: 3rem;
+      animation: spin 4s linear infinite;
+      margin-top: 20px;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Ups! Stranica nije pronađena.</p>
+    <p>Možda ste zalutali... 😅</p>
+    <div class="emoji">🚀</div>
+    <p><a href="/" class="button">Vrati se na početnu</a></p>
+  </div>
+</body>
+</html>
